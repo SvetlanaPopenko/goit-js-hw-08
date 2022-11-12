@@ -28,8 +28,8 @@ function onSubmit(evt) {
 }
 
 function updateUserData() {
-  if (localStorage.getItem(feedKey)) {
-    const userData = JSON.parse(localStorage.getItem(feedKey) || '');
+  if (localStorage.getItem(STORAGE_KEY)) {
+    const userData = JSON.parse(localStorage.getItem(STORAGE_KEY) || '');
     formRef.elements.email.value = userData.email;
     formRef.elements.message.value = userData.message;
   }
